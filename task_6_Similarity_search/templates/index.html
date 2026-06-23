@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Re-Ranker</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Semantic Document Re-Ranker</h1>
+
+    <form method="POST">
+
+        <textarea
+            name="query"
+            placeholder="Enter your query..."
+            required>{{ query }}</textarea>
+
+        <button type="submit">
+            Search
+        </button>
+
+    </form>
+
+    {% if results %}
+
+    <h2>Results</h2>
+
+    <table>
+
+        <tr>
+            <th>Rank</th>
+            <th>Document</th>
+            <th>Similarity %</th>
+        </tr>
+
+        {% for result in results %}
+
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ result.document }}</td>
+            <td>{{ result.score }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
