@@ -1,0 +1,7 @@
+DOCUMENT RANKINGS
+======================================================================
+1. 1_machine_learning_basics.txt | Score: 0.5993 | Similarity: 59.93%
+2. 2_neural_networks.txt | Score: 0.4248 | Similarity: 42.48%
+3. 3_natural_language_processing.txt | Score: 0.4206 | Similarity: 42.06%
+4. 4_computer_vision.txt | Score: 0.3896 | Similarity: 38.96%
+5. 5_ai_ethics.txt | Score: 0.3300 | Similarity: 33.00%
