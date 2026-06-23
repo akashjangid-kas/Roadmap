@@ -31,7 +31,7 @@ from pprint import pprint
 # STEP 1: CONNECT TO ATLAS
 # ====================================================
 
-URI = "mongodb+srv://akashjangid:mongo@cluster0.ejifxf9.mongodb.net/?appName=Cluster0"
+URI = "mongodb+srv://akashjangid:<PASSWORD>@cluster0.ejifxf9.mongodb.net/?appName=Cluster0"
 
 client = MongoClient(URI)
 
